@@ -78,7 +78,8 @@ def list_files():
         {
             "name": f["name"],
             "path": f["path"],
-            "type": f["type"]
+            "type": f["type"],
+            "size": f.get("size", 0)
         }
         for f in res.json()
     ]
